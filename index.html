@@ -6,12 +6,12 @@
     <title>Главная — Bootstrap Shop</title>
 
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
     <link rel="stylesheet" href="css/custom.css">
 </head>
-<body>
+<body class="bg-light">
 
     <header class="bg-primary text-white py-4">
         <div class="container">
@@ -63,14 +63,20 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#popular">
-                            Популярные товары
+                        <a class="nav-link" href="catalog.html">
+                            Каталог
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#advantages">
-                            Преимущества
+                        <a class="nav-link" href="product.html">
+                            Товар
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">
+                            Заявка
                         </a>
                     </li>
                 </ul>
@@ -88,26 +94,28 @@
 
                     <p class="lead text-muted">
                         Проект демонстрирует использование Bootstrap-сетки,
-                        адаптивных колонок и базовых utility-классов.
+                        адаптивных колонок и готовых компонентов интерфейса.
                     </p>
 
-                    <a class="btn btn-primary btn-lg" href="#popular">
-                        Посмотреть товары
+                    <a
+                        class="btn btn-primary btn-lg"
+                        href="catalog.html"
+                    >
+                        Перейти в каталог
                     </a>
                 </div>
 
                 <div class="col-12 col-lg-6">
-                    <div class="placeholder-box p-5 bg-light border rounded text-center">
+                    <div class="placeholder-box p-5 bg-white border rounded text-center">
                         <p class="mb-0 text-muted">
-                            Здесь может быть изображение, баннер
-                            или промо-блок.
+                            Каталог учебных товаров
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container my-5" id="advantages">
+        <section class="container my-5">
             <h2 class="text-center mb-4">
                 Преимущества проекта
             </h2>
@@ -133,10 +141,9 @@
 
                 <div class="col-12 col-md-4">
                     <div class="p-4 border rounded h-100 bg-white">
-                        <h3 class="h5">Готовая база</h3>
+                        <h3 class="h5">Готовые компоненты</h3>
                         <p class="mb-0 text-muted">
-                            Проект подготовлен к добавлению карточек,
-                            форм и модальных окон.
+                            Используются карточки, формы, кнопки и навигация Bootstrap.
                         </p>
                     </div>
                 </div>
@@ -147,69 +154,87 @@
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="mb-0">Популярные товары</h2>
 
-                <a class="btn btn-outline-primary" href="#popular">
+                <a
+                    class="btn btn-outline-primary"
+                    href="catalog.html"
+                >
                     Все товары
                 </a>
             </div>
 
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="border rounded h-100 p-4">
-                        <span class="badge bg-success mb-3">
-                            Новинка
-                        </span>
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-success mb-3 align-self-start">
+                                Новинка
+                            </span>
 
-                        <h3 class="h5">Товар 1</h3>
+                            <h3 class="h5">Товар 1</h3>
 
-                        <p class="text-muted">
-                            Краткое описание учебного товара.
-                        </p>
+                            <p class="text-muted">
+                                Краткое описание первого учебного товара.
+                            </p>
 
-                        <p class="fw-bold mb-3">1000 руб.</p>
+                            <p class="fw-bold mb-3 mt-auto">1000 руб.</p>
 
-                        <a class="btn btn-primary" href="#popular">
-                            Подробнее
-                        </a>
+                            <a
+                                class="btn btn-primary"
+                                href="product.html"
+                            >
+                                Подробнее
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="border rounded h-100 p-4">
-                        <span class="badge bg-warning text-dark mb-3">
-                            Хит
-                        </span>
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-warning text-dark mb-3 align-self-start">
+                                Хит
+                            </span>
 
-                        <h3 class="h5">Товар 2</h3>
+                            <h3 class="h5">Товар 2</h3>
 
-                        <p class="text-muted">
-                            Краткое описание учебного товара.
-                        </p>
+                            <p class="text-muted">
+                                Краткое описание второго учебного товара.
+                            </p>
 
-                        <p class="fw-bold mb-3">1500 руб.</p>
+                            <p class="fw-bold mb-3 mt-auto">1500 руб.</p>
 
-                        <a class="btn btn-primary" href="#popular">
-                            Подробнее
-                        </a>
+                            <a
+                                class="btn btn-primary"
+                                href="product.html"
+                            >
+                                Подробнее
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="border rounded h-100 p-4">
-                        <span class="badge bg-danger mb-3">
-                            Скидка
-                        </span>
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger mb-3 align-self-start">
+                                Скидка
+                            </span>
 
-                        <h3 class="h5">Товар 3</h3>
+                            <h3 class="h5">Товар 3</h3>
 
-                        <p class="text-muted">
-                            Краткое описание учебного товара.
-                        </p>
+                            <p class="text-muted">
+                                Краткое описание третьего учебного товара.
+                            </p>
 
-                        <p class="fw-bold mb-3">2000 руб.</p>
+                            <p class="fw-bold mb-3 mt-auto">2000 руб.</p>
 
-                        <a class="btn btn-primary" href="#popular">
-                            Подробнее
-                        </a>
+                            <a
+                                class="btn btn-primary"
+                                href="product.html"
+                            >
+                                Подробнее
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,16 +253,16 @@
                 <div class="col-12 col-md-6 text-md-end">
                     <a
                         class="text-white text-decoration-none me-3"
-                        href="#popular"
+                        href="catalog.html"
                     >
-                        Популярные товары
+                        Каталог
                     </a>
 
                     <a
                         class="text-white text-decoration-none"
-                        href="#advantages"
+                        href="order.html"
                     >
-                        Преимущества
+                        Заявка
                     </a>
                 </div>
             </div>
@@ -245,7 +270,7 @@
     </footer>
 
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     ></script>
 </body>
 </html>
