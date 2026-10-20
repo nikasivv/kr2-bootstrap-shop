@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты — FloraShop</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-shop">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">FloraShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav"
+                aria-expanded="false" aria-label="Открыть меню">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">О товарах</a></li>
+                <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <h1 class="section-title mb-3">Контакты</h1>
+    <p class="text-muted mb-4">
+        Информация о магазине и ответы на вопросы по оформлению заказа.
+    </p>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <h2 class="h4">Свяжитесь с нами</h2>
+                    <p><strong>Телефон:</strong> +7 (000) 000-00-00</p>
+                    <p><strong>Email:</strong> hello@example.com</p>
+                    <p class="text-muted small">
+                        Это демонстрационные контакты. Замени их на свои при необходимости.
+                    </p>
+                    <a href="order.html" class="btn btn-shop">Оформить заказ</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <h2 class="h4">Как сделать заказ?</h2>
+                    <p>Выберите товар в каталоге и перейдите к форме заказа.</p>
+                    <a href="catalog.html" class="btn btn-outline-shop">Открыть каталог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-5">
+        <h2 class="h3 mb-3">Часто задаваемые вопросы</h2>
+        <div class="accordion" id="contactFAQ">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#contactOne"
+                            aria-expanded="true" aria-controls="contactOne">
+                        Как выбрать цветы?
+                    </button>
+                </h3>
+                <div id="contactOne" class="accordion-collapse collapse show"
+                     data-bs-parent="#contactFAQ">
+                    <div class="accordion-body">
+                        Посмотрите каталог и выберите букет или растение, подходящее для вашего повода.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#contactTwo"
+                            aria-expanded="false" aria-controls="contactTwo">
+                        Как оформить заказ?
+                    </button>
+                </h3>
+                <div id="contactTwo" class="accordion-collapse collapse"
+                     data-bs-parent="#contactFAQ">
+                    <div class="accordion-body">
+                        Откройте страницу заказа, заполните необходимые поля и проверьте форму.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer-shop py-4">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2026 FloraShop</p>
+    </div>
+</footer>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
