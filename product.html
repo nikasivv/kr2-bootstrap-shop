@@ -2,213 +2,98 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Товар 1 — Bootstrap Shop</title>
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>О товаре — FloraShop</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
-<body class="bg-light">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                Bootstrap Shop
-            </a>
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Переключить навигацию"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Главная</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="catalog.html">Каталог</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="product.html"
-                        >
-                            Товар
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="order.html">Заявка</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-shop">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">FloraShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav"
+                aria-expanded="false" aria-label="Открыть меню">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                <li class="nav-item"><a class="nav-link active" href="product.html">О товарах</a></li>
+                <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <main class="container my-5">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="index.html">Главная</a>
-                </li>
+<main class="container py-5">
+    <p><a href="catalog.html" class="text-decoration-none">&larr; Вернуться в каталог</a></p>
 
-                <li class="breadcrumb-item">
-                    <a href="catalog.html">Каталог</a>
-                </li>
-
-                <li class="breadcrumb-item active" aria-current="page">
-                    Товар 1
-                </li>
-            </ol>
-        </nav>
-
-        <div class="row g-4">
-            <div class="col-12 col-lg-6">
-                <div class="card shadow-sm">
-                    <div class="placeholder-image bg-white border rounded d-flex align-items-center justify-content-center">
-                        <span class="text-muted">
-                            Изображение товара
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-6">
-                <span class="badge bg-success mb-3">Новинка</span>
-
-                <h1 class="h2">Товар 1</h1>
-
-                <p class="lead text-muted">
-                    Подробное описание учебного товара для страницы карточки.
-                </p>
-
-                <p class="fs-3 fw-bold">1000 руб.</p>
-
-                <div class="d-flex gap-2 mb-4">
-                    <a class="btn btn-primary btn-lg" href="order.html">
-                        Оформить заявку
-                    </a>
-
-                    <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
-                        Назад в каталог
-                    </a>
-                </div>
-
-                <div class="alert alert-warning" role="alert">
-                    Это учебная карточка товара. Данные используются
-                    для демонстрации Bootstrap-компонентов.
-                </div>
-            </div>
+    <div class="row align-items-center g-4">
+        <div class="col-md-5">
+            <img id="productImage" src="images/roses.svg"
+                 class="img-fluid rounded-4 product-image"
+                 alt="Розы">
         </div>
-
-        <section class="mt-5">
-            <h2 class="h4 mb-3">Характеристики</h2>
-
-            <div class="table-responsive">
-                <table class="table table-striped table-bordered align-middle">
-                    <tbody>
-                        <tr>
-                            <th scope="row">Категория</th>
-                            <td>Учебные товары</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">Цена</th>
-                            <td>1000 руб.</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">Наличие</th>
-                            <td>В наличии</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="mt-5">
-            <h2 class="h4 mb-3">Частые вопросы</h2>
-
-            <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                    <h3 class="accordion-header">
-                        <button
-                            class="accordion-button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faqOne"
-                            aria-expanded="true"
-                            aria-controls="faqOne"
-                        >
-                            Можно ли оформить заявку без регистрации?
-                        </button>
-                    </h3>
-
-                    <div
-                        id="faqOne"
-                        class="accordion-collapse collapse show"
-                        data-bs-parent="#faqAccordion"
-                    >
-                        <div class="accordion-body">
-                            Да, в учебном проекте заявка оформляется
-                            без регистрации.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h3 class="accordion-header">
-                        <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faqTwo"
-                            aria-expanded="false"
-                            aria-controls="faqTwo"
-                        >
-                            Где используется Bootstrap?
-                        </button>
-                    </h3>
-
-                    <div
-                        id="faqTwo"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#faqAccordion"
-                    >
-                        <div class="accordion-body">
-                            Bootstrap используется для сетки, карточек,
-                            форм, навигации, сообщений и модальных окон.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container">
-            <p class="mb-0">
-                &copy; 2026 Bootstrap Shop. Учебный проект.
+        <div class="col-md-7">
+            <span class="badge text-bg-danger mb-2">FloraShop</span>
+            <h1 id="productTitle" class="section-title">Розы</h1>
+            <p id="productDescription">
+                Классический букет, который подходит для разных событий.
             </p>
+            <p id="productPrice" class="product-price">2 500 ₽</p>
+            <a id="productOrderLink" href="order.html?product=roses"
+               class="btn btn-shop btn-lg">Заказать</a>
         </div>
-    </footer>
+    </div>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    ></script>
+    <section class="mt-5">
+        <h2 class="h3 mb-3">Часто задаваемые вопросы</h2>
+        <div class="accordion" id="flowerFAQ">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#faqOne"
+                            aria-expanded="true" aria-controls="faqOne">
+                        Как выбрать букет?
+                    </button>
+                </h3>
+                <div id="faqOne" class="accordion-collapse collapse show"
+                     data-bs-parent="#flowerFAQ">
+                    <div class="accordion-body">
+                        Ориентируйтесь на повод, любимые цветы получателя и желаемую цветовую гамму.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#faqTwo"
+                            aria-expanded="false" aria-controls="faqTwo">
+                        Как ухаживать за цветами?
+                    </button>
+                </h3>
+                <div id="faqTwo" class="accordion-collapse collapse"
+                     data-bs-parent="#flowerFAQ">
+                    <div class="accordion-body">
+                        Меняйте воду, подрезайте стебли и держите букет вдали от отопительных приборов.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer-shop py-4">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2026 FloraShop</p>
+    </div>
+</footer>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/shop.js"></script>
 </body>
 </html>
